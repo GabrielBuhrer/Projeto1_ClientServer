@@ -61,7 +61,7 @@ def main():
                     
         print(lista_recebidos)
         print(len(lista_recebidos))
-
+        #lista_recebidos = lista_recebidos.pop()
         
         com1.sendData(np.asarray((len(lista_recebidos)).to_bytes(2, byteorder='big')))
         while com1.tx.threadMutex==True:
